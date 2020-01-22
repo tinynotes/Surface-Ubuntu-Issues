@@ -1,0 +1,35 @@
+Upgrade the kernel to Newest Version (for me it is 5.4) With UKUU.
+
+You should install Ubuntu Kernel Upgrade Utility (UKUU).
+
+sudo apt-add-repository -y ppa:teejee2008/ppa
+sudo apt-get update
+sudo apt-get install ukuu
+
+Run UKUU with this command:
+
+sudo ukuu-gtk
+
+In the UKUU GUI select Kernel 5.4 and install it. When the process finishes, you have to reboot.
+
+Reboot!
+
+If after waking up, your Wifi is broken, you have to deal with wifi settings and connect to wifi.
+
+Create new dir /etc/pm/config.d
+
+sudo mkdir /etc/pm/config.d
+
+Create a new file in this dir
+
+sudo touch config
+
+Edit this file
+
+sudo -H gedit /etc/pm/config.d/config
+
+SUSPEND_MODULES="iwlwifi"
+
+Save, close and Reboot
+
+Then the power button is working.
