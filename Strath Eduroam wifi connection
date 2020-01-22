@@ -1,0 +1,7 @@
+Wifi Settings for Eduroam Wifi (Strath)
+Authentication: PEAP
+Anonymous identity: anonymous@strath.ac.uk
+No CA certificare is required
+Inner authentication: MSCHAPv2
+Username: username@strath.ac.uk
+Password: password
