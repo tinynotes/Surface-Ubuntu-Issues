@@ -1,0 +1,35 @@
+My device is Surface Pro 5
+After installing Ubuntu system 18.04, the kernel vison is 5.0.*
+The newest kernel version 5.4 is not working on some function ,for example, touchscreen, power button and power status.
+So the kernel version of 5.3.18 for surface is reccommonded.
+
+Update and Upgrade
+
+sudo apt update & upgrade
+
+Install packages
+
+sudo apt install git
+
+Clone this repository
+
+git clone --depth 1 https://github.com/linux-surface/linux-surface.git
+
+cd linux-surface (change to linux surface directory)
+
+sudo ./setup.sh
+
+Then you need download and install Kernel packages from https://github.com/linux-surface/linux-surface/releases
+
+sudo dpkg -i linux-headers-[VERSION].deb linux-image-[VERSION].deb linux-libc-dev-[VERSION].deb
+
+As mentioned above, the kernel version of 5.3.18 is installed.
+
+After installing kernel, reboot your device.
+
+You can check the kernel version running on your device by uname -r
+
+After rebooting, the kernel version should be "5.3.18-surface"
+
+Then all functions is working well.
+
