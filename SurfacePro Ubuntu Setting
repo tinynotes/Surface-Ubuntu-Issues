@@ -1,7 +1,7 @@
 My device is Surface Pro 5
-After installing Ubuntu system 18.04, the kernel vison is 5.0.*
-The newest kernel version 5.4 is not working on some function ,for example, touchscreen, power button and power status.
-So the kernel version of 5.3.18 for surface is reccommonded.
+After installing Ubuntu system 18.04LTS, the kernel version is 5.0.*
+The newest kernel version 5.4 is not working on some functions ,for example, touchscreen, power button and battery status.
+So the kernel version of 5.3.18 for Surface is reccommonded.
 
 Update and Upgrade
 
@@ -31,5 +31,5 @@ You can check the kernel version running on your device by uname -r
 
 After rebooting, the kernel version should be "5.3.18-surface"
 
-Then all functions is working well.
+Then all functions are working well.
 
